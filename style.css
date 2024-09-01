@@ -1,14 +1,14 @@
 @font-face{
   font-family: 'Richmond Display';
-  src: url('/RichmondDisplaySemi-Bold.ttf');
+  src: url('RichmondDisplaySemi-Bold.ttf');
 }
 @font-face{
   font-family: 'PPNeueMontreal Medium';
-  src: url('/PPNeueMontreal-Medium.ttf')
+  src: url('PPNeueMontreal-Medium.ttf')
 }
 @font-face{
   font-family: 'PPNeueMontreal Book';
-  src: url('/PPNeueMontreal-Book.ttf');
+  src: url('PPNeueMontreal-Book.ttf');
 }
 
 body {
