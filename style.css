@@ -1,0 +1,177 @@
+@font-face{
+  font-family: 'Richmond Display';
+  src: url('/fonts/RichmondDisplay/RichmondDisplaySemi-Bold.ttf');
+}
+@font-face{
+  font-family: 'PPNeueMontreal Medium';
+  src: url('/fonts/PPNeueMontreal/PPNeueMontreal-Medium.ttf')
+}
+@font-face{
+  font-family: 'PPNeueMontreal Book';
+  src: url('/fonts/PPNeueMontreal/PPNeueMontreal-Book.ttf');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-image: url('/assets/Hero.jpg');
+}
+
+.additional-content{
+  margin-top: 25px;
+  .dot-wrapper{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    label.dot{
+      height: 20px;
+      width: 20px;
+      border: 2px solid rgba(255,255,255,0.5);
+      border-radius: 50%;
+      display: block;
+      input{
+        opacity: 0;
+      }
+    }
+    label:has(input:checked){
+      background-color: #17755a86;
+      box-shadow: 1px 0px 8px 6px white;
+    }
+  }
+  .additional-content-text{
+    margin-top: 2rem;
+    padding: 12px 8px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 25px;
+    text-align: center;
+    span{
+      color: white;
+      font-family: 'PPNeueMontreal Book';
+      padding: 12px 8px;
+      font-size: 20px;
+      display: none;
+    }
+  }
+}
+
+.hero-content {
+  text-align: center;
+  color: #fff;
+  width: fit-content;
+  position: relative;
+  padding: 2rem;
+  border-radius: 25px;
+  .hero-text-wrapper{
+    position: relative;
+    h1{
+      font-family: 'Richmond Display';
+      font-size: 50px;
+      margin: 0;
+    }
+    h2{
+      font-family: 'PPNeueMontreal Book';
+      font-size: 30px;
+      margin: 1rem 0 3rem;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+    }
+  } 
+}
+
+.hero-content:before{
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.3);
+  top: 0;
+  left: 0;
+  border-radius: 25px;
+}
+
+
+.cta-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #17755a;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'PPNeueMontreal Book';
+}
+
+.disclamer{
+  margin-bottom: 25px;
+  font-family: 'PPNeueMontreal Book';
+  color: white;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 25% auto; /* 15% from the top and centered */
+  padding: 35px;
+  border: 1px solid #888;
+  width: fit-content;
+  position: relative;
+  border-radius: 25px;
+  .close{
+    position: absolute;
+    right:2%;
+    top:1%;
+  }
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-family: 'PPNeueMontreal Book';
+  input{
+    padding: 12px 8px;
+    font-size: medium;
+  }
+}
