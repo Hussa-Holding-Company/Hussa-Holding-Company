@@ -3,9 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bruspeak</title>
+    <title>Your Landing Page Title</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    Abas Hamzi
+    <section class="hero">
+        <div class="additional-content">
+            <div class="dot-wrapper">
+                <label class="dot" for="Stanovi">
+                    <input type="radio" name="extra-content" value="Stanovi" id="Stanovi">
+                </label>
+                <label class="dot" for="Bazeni">
+                    <input type="radio" name="extra-content" value="Bazeni" id="Bazeni">
+                </label>
+                <label class="dot" for="Restoran">
+                    <input type="radio" name="extra-content" value="Restoran" id="Restoran">
+                </label>
+            </div>
+            <div class="additional-content-text">
+                <span class="bazeni">Spa Centar sa Bazenom</span>
+                <span class="restoran">Restoran</span>
+                <span class="stanovi">Luksuzni Apartmani</span>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text-wrapper">
+            <h1>Otkrijte novu dimenziju života u Sarajevu.</h1>
+            <h2>Priroda. Prestiž. Prosperitet.</h2>
+            <a href="#" class="cta-button">Zakažite sastanak
+            </a>
+            </div>
+        </div>
+        <div>
+            <div id="formModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <form
+                  method="POST"
+                  action="https://script.google.com/macros/s/AKfycbxt47vKGxMt1Krv7h9r1WvuHAILTmwtq4U-9BJMBsmDTCrXtAKi5HAyWsPaBNVKPVyn/exec"
+                  >
+                  <input name="Ime i prezime" type="text" placeholder="Ime i prezime" required>
+                  <input name="Email" type="email" placeholder="Email adresa" required>
+                  <input name="Broj telefona" type="text" placeholder="Telefon (opcionalno)">
+                  <button id="submitForm" class="cta-button "type="submit">Pošalji</button>
+                  </form>
+                </div>          
+              </div>
+        </div>
+        <div class="disclamer">
+            Piece of Paradise &copy;2024 - Hussa DOO
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
