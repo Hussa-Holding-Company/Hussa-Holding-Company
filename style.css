@@ -1,14 +1,14 @@
 @font-face{
   font-family: 'Richmond Display';
-  src: url('https://github.com/Hussa-Holding-Company/pieceofparadise/blob/main/RichmondDisplaySemi-Bold.ttf');
+  src: url('RichmondDisplaySemi-Bold.ttf');
 }
 @font-face{
   font-family: 'PPNeueMontreal Medium';
-  src: url('https://github.com/Hussa-Holding-Company/pieceofparadise/blob/main/PPNeueMontreal-Medium.ttf')
+  src: url('PPNeueMontreal-Medium.ttf')
 }
 @font-face{
   font-family: 'PPNeueMontreal Book';
-  src: url('https://github.com/Hussa-Holding-Company/pieceofparadise/blob/main/PPNeueMontreal-Book.ttf');
+  src: url('PPNeueMontreal-Book.ttf');
 }
 
 body {
@@ -26,7 +26,7 @@ body {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  background-image: url('https://github.com/Hussa-Holding-Company/pieceofparadise/blob/main/Hero.jpg?raw=true');
+  background-image: url('Hero.jpg?raw=true');
 }
 
 .additional-content{
